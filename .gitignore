@@ -114,3 +114,5 @@ build
 .strapi-updater.json
 
 package-lock.json
+config/plugin.js
+config/database.js

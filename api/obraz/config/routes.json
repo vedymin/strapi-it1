@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/obrazs",
+      "handler": "obraz.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obrazs/count",
+      "handler": "obraz.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obrazs/:id",
+      "handler": "obraz.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/obrazs",
+      "handler": "obraz.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/obrazs/:id",
+      "handler": "obraz.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/obrazs/:id",
+      "handler": "obraz.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obrazy",
+  "info": {
+    "name": "Obraz",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tytul": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "cena": {
+      "type": "decimal",
+      "required": true
+    },
+    "zdjecie": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}
